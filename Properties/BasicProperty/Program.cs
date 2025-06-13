@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Properties are the special types of class members that provide a flexible mechanism
+// to read, write, or compute the value of a private field.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +13,8 @@ namespace BasicProperty
     {
         private int age;
         private string name;
-        public int Age
-        {              // Property or indexer cannot have void type.
+        public int Age                  // Property or indexer cannot have void type.
+        {              
             get { return age; }
             set
             {
@@ -29,7 +32,7 @@ namespace BasicProperty
             set { name = value; }
 
             // or               
-            // get; set;             // This can only be done when there is absolutely no customization.
+            // get; set;               // This can only be done when there is absolutely no customization.
         }
     }
     internal class Program
